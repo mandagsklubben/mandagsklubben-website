@@ -1,4 +1,4 @@
-﻿@backgroundColor: #FF0000;
+﻿@backgroundColor: #000000;
 @foregroundColor: #FFFF00;
 @textBackgroundColor: #000000;
 
@@ -24,15 +24,13 @@
     font-style: normal;
 }
 
-body
-{
+body {
     background-color: @textBackgroundColor;
     font-family: 'kremlinregular', sans-serif;
     text-transform: uppercase;
     font-size: 1em;
 
-    div#header
-    {
+    div#header {
         font-family: 'vkb_konqacommunist', sans-serif;
         background-color: @backgroundColor;
         color: @foregroundColor;
@@ -42,25 +40,23 @@ body
         right: 0;
         padding: 1em;
         height: 5em;
+        font-size: 1.5em;
 
-        @media only screen and (max-width : 500px)
-        {
+        @media only screen and (max-width : 500px) {
             height: 5em;
         }
 
-        span#logo
-        {
+        span#logo {
             font-size: 3em;
 
-            @media only screen and (max-width : 500px)
-            {
+            @media only screen and (max-width : 500px) {
                 font-size: 2em;
             }
         }
     }
 
-    div#content
-    {
+    div#content {
+        background: url('/Content/Images/background.png') !important;
         background-color: @textBackgroundColor;
         color: @foregroundColor;
         position: absolute;
@@ -68,9 +64,10 @@ body
         font-size: 1em;
         overflow-y: auto;
 
-        @media only screen and (max-width : 500px)
-        {
-            top: 5em; font-size: 0.9em; bottom: 1em;
+        @media only screen and (max-width : 500px) {
+            top: 5em;
+            font-size: 0.9em;
+            bottom: 1em;
         }
 
         left: 0;
@@ -78,33 +75,29 @@ body
         bottom: 1em;
         padding: 1em;
 
-        div.contentBlock
-        {
+        div.contentBlock {
             float: left;
             width: 20em;
             margin-right: 1em;
             margin-bottom: 3em;
 
-            div.event
-            {
+            div.event {
                 font-size: 1.2em;
                 line-height: 1.2em;
-                span.countdown
-                {
+
+                span.countdown {
                     font-size: 1.5em;
                     line-height: 1.2em;
                 }
 
-                h2
-                {
+                h2 {
                     margin-bottom: 0;
                 }
             }
         }
     }
 
-    div#footer
-    {
+    div#footer {
         background-color: @backgroundColor;
         color: @foregroundColor;
         position: absolute;
@@ -114,19 +107,16 @@ body
         height: 2em;
         padding: 1em;
 
-        @media only screen and (max-width : 500px)
-        {
+        @media only screen and (max-width : 500px) {
             height: 1em;
         }
 
-        a
-        {
+        a {
             color: @foregroundColor;
             text-decoration: none;
-            font-size: 2em;
+            font-size: 1.5em;
 
-            @media only screen and (max-width : 500px)
-            {
+            @media only screen and (max-width : 500px) {
                 font-size: 1.2em;
             }
         }

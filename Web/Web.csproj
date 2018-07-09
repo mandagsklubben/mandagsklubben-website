@@ -20,6 +20,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -174,6 +176,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\Fonts\konqa-webfont.svg" />
     <Content Include="Content\Fonts\kremlin-webfont.svg" />
+    <Content Include="Content\Images\background.png" />
+    <Content Include="Content\Images\logo.png" />
     <Content Include="Global.asax" />
     <None Include="Properties\PublishProfiles\Mandagsklubben.pubxml" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
