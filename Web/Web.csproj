@@ -178,6 +178,9 @@
     <Content Include="Content\Fonts\kremlin-webfont.svg" />
     <Content Include="Content\Images\background.jpg" />
     <Content Include="Content\Images\logo.png" />
+    <Content Include="favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Global.asax" />
     <None Include="Properties\PublishProfiles\Mandagsklubben.pubxml" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
