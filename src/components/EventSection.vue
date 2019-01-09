@@ -9,9 +9,8 @@
         {{ event.description }}
       </p>
       <p>
-        {{ event.starttime | moment("dddd Do MMMM YYYY") }}
-        ,
-        {{ event.starttime | moment("HH:MM") }}-{{ event.endtime | moment("HH:MM") }}
+        {{ event.starttime | moment("dddd Do MMMM YYYY") }},
+        {{ event.starttime | moment("HH:mm") }}-{{ event.endtime | moment("HH:mm") }}
       </p>
       <p>
         {{ event.placename }}, {{ event.placestreet }}
