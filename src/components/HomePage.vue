@@ -1,8 +1,8 @@
 <template>
-  <main class="m-10">
+  <main class="m-0">
 
     <div class="flex flex-wrap">
-      <section class="m-10 flex-1 min-width-160">
+      <section class="m-5 flex-1 min-width-160">
         <img src="/images/logosmall.png" />
       </section>
     
