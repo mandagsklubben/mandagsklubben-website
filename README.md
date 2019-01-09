@@ -1,3 +1,11 @@
-# Mandagsklubben.net
+# [mandagsklubben.net](https://mandagsklubben.net) website
 
-This is the mandagsklubben.net public landing page website.
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
