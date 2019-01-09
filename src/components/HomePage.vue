@@ -1,15 +1,40 @@
 <template>
-  <section>
-    <h1>Måndagsklubben</h1>
-  </section>
+  <main class="m-10">
+
+    <div class="flex flex-wrap">
+      <section class="m-10 flex-1 min-width-256">
+        <img src="/images/logosmall.png" />
+      </section>
+    
+      <EventSection v-for="event in events" v-bind:key="event.id" :event="event" />
+    </div>
+
+  </main>
 </template>
 
 <script>
+import EventSection from './EventSection.vue'
+
 export default {
-  name: 'HomePage'
+  name: 'HomePage',
+  components: {
+    EventSection
+  },
+  data () {
+    return {
+      events: [],
+    }
+  },
+  mounted () {
+    this.axios
+      .get('https://mandagsklubben-functions.azurewebsites.net/api/events')
+      .then(response => (this.events = response.data.events))
+  }
 }
 </script>
 
 <style scoped>
-
+.min-width-256 {
+  min-width: 256px;
+}
 </style>

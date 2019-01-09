@@ -44,6 +44,10 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 */
 
 let colors = {
+
+  'background': '#0b0b0b',
+  "foreground": 'fffc00',
+
   'transparent': 'transparent',
 
   'black': '#22292f',
