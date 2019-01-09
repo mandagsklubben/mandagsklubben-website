@@ -2,7 +2,7 @@
   <main class="m-10">
 
     <div class="flex flex-wrap">
-      <section class="m-10 flex-1 min-width-256">
+      <section class="m-10 flex-1 min-width-160">
         <img src="/images/logosmall.png" />
       </section>
     
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style scoped>
-.min-width-256 {
-  min-width: 256px;
+.min-width-160 {
+  min-width: 160px;
 }
 </style>

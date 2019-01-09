@@ -1,5 +1,5 @@
 <template>
-  <section class="m-10 flex-1 min-width-320">
+  <section class="m-10 flex-1 min-width-160">
       <h2 class="absolute bg-background p-2">
         {{ event.starttime | moment("from") }}
       </h2>
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style scoped>
-.min-width-320 {
-  min-width: 320px;
+.min-width-160 {
+  min-width: 160px;
 }
 </style>
