@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ee47af04-d47d-4d23-8f6d-8af2064ad649/resourceGroups/FlowersFX/providers/Microsoft.Web/sites/mandagsklubben",
+    "appService.deploySubpath": "dist"
+}
