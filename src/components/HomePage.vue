@@ -77,7 +77,7 @@ export default {
   },
   mounted () {
     this.axios
-      .get('https://mandagsklubben-functions.azurewebsites.net/api/events')
+      .get('https://mandagsklubben.blob.core.windows.net/mandagsklubben-events/events.json')
       .then(response => (this.events = response.data.events))
   }
 }
