@@ -1,8 +1,10 @@
 <template>
   <section class="m-5 flex-1 min-width-320 max-width-720">
       <h2 class="absolute bg-background p-2">
-        {{ event.starttime | moment("from") }}
-      </h2>
+        {{ eventfriendlytime() }}
+        ★
+        <a :href="'https://www.facebook.com/events/' + event.id" target="blank">RSVP</a>
+      </h2>     
       <img :src="event.coverurl ? event.coverurl : '/images/cover.jpg'" />
       <h1>{{ event.name }}</h1>
       <p class="text-lg">
@@ -19,9 +21,20 @@
 </template>
 
 <script>
+import moment from 'moment'
+
 export default {
   name: 'EventSection',
-  props: ['event']
+  props: ['event', 'now'],
+  methods: {
+    eventfriendlytime: function () {
+      if (moment(this.now).isBetween(this.event.starttime, this.event.endtime)) {
+        return "in progress"
+      } else {
+        return moment(this.event.starttime).fromNow()
+      }
+    }
+  }
 }
 </script>
 
@@ -31,5 +44,13 @@ export default {
 }
 .max-width-720 {
   max-width: 720px;
+}
+a {
+  color: #FFFC00;
+  background-color: #0b0b0b;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 </style>
