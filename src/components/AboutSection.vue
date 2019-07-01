@@ -12,12 +12,16 @@
         <p class="text-2xl">
           Welcome to Måndagsklubben - a friendly afterwork community on that dreadful of weekdays: <em>Monday</em>
         </p>
+        <p class="text-2xl">
+          Summer 2019: we're visiting different parks and venues every week so check the event below every Monday for a location!
+        </p>        
         <p>
-          Our events are self-organized and free to attend and takes place inside the Wokhouse bar in Stockholm, Sweden, on <em>every</em> Monday evening.
+          Our events are self-organized and free to attend and takes place at a bar in Stockholm, Sweden, on <em>every</em> Monday evening.
         </p>
         <p>
           Måndagsklubben was started by the programmers Iona Rosin and Oskar Duveborn back in 2011. They wanted a place to hang out after work
-          on Mondays where both introverts and extroverts could feel both welcome and engaged.
+          on Mondays where both introverts and extroverts could feel both welcome and engaged. We've spent four years at KGB Bar and another
+          four years at Wokhouse.
         </p>
         <p>
           You'll feel just as home sitting in a corner hacking away on your latest project with a coffee or a beverage from the bar as 
