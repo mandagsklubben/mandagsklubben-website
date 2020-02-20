@@ -2,7 +2,7 @@
     <div class="flex flex-wrap">
 
       <section class="m-5 flex-auto max-width-720">
-        <img src="/images/cover-venue.jpg" />
+        <img src="/images/nuts.jpg" />
       </section>
 
       <section class="m-5 flex-1 max-width-720 min-width-320">
@@ -12,11 +12,8 @@
         <p class="text-2xl">
           Welcome to Måndagsklubben - a friendly afterwork community on that dreadful of weekdays: <em>Monday</em>
         </p>
-        <p class="text-2xl">
-          Summer 2019: we're visiting different parks and venues every week so check the event below every Monday for a location!
-        </p>        
         <p>
-          Our events are self-organized and free to attend and takes place at a bar in Stockholm, Sweden, on <em>every</em> Monday evening.
+          Our events are self-organized and free to attend and takes place downstairs at Medeltidskrogen Sjätte Tunnan in Stockholm, Sweden, on <em>every</em> Monday evening.
         </p>
         <p>
           Måndagsklubben was started by the programmers Iona Rosin and Oskar Duveborn back in 2011. They wanted a place to hang out after work
@@ -28,7 +25,7 @@
           when you're participating in the latest big screen or table activity with your friends, coworkers, strangers or competitors.
         </p>
         <p>
-          People usually arrive between 17:00 and 19:00 and the crowd varies from week to week.
+          People usually arrive between 17:00 and 19:00 and the crowd varies from week to week. If there's a special event, it'll be posted here, but fret not - we're here every Monday even if there's nothing special posted!
           </p>
       </section>  
 
