@@ -3,13 +3,25 @@
 
       <section class="flex-auto m-2">
         <a href="https://www.facebook.com/pg/mandagsklubben.net" target="blank">
-          <img src="/images/facebook.svg" height="12" width="12"> Like our Facebook Page to get notified of upcoming events
+          Facebook
         </a>
       </section>
       
       <section class="flex-auto m-2">
+        <a href="https://discord.gg/4VwCann" target="blank">
+          Discord
+        </a>
+      </section>
+
+      <section class="flex-auto m-2">
+        <a href="https://www.twitch.tv/mandagsklubben" target="blank">
+          Twitch
+        </a>
+      </section>
+
+      <section class="flex-auto m-2">
         <a href="http://www.flowersfx.com" target="blank">
-          FlowersFX © 2011-2019 ★ info@flowersfx.com
+          FlowersFX © 2011-2020 ★ info@flowersfx.com
         </a>
       </section>
 
