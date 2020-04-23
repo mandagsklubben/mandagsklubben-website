@@ -43,10 +43,5 @@ export default {
 }
 a {
   color: #FFFC00;
-  background-color: #0b0b0b;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
 }
 </style>

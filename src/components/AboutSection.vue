@@ -48,4 +48,7 @@ export default {
 .max-width-720 {
   max-width: 720px;
 }
+a {
+  color: #FFFC00;
+}
 </style>
