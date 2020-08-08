@@ -13,7 +13,7 @@
           Welcome to Måndagsklubben - a friendly afterwork community on that dreadful of weekdays: <em>Monday</em>
         </p>
         <p class="text-2xl">
-          During the pandemic we're inviting you to hang out in our <a href="https://discord.gg/4VwCann">Discord</a> and <a href="https://www.twitch.tv/mandagsklubben">Twitch</a> stream every Monday.
+          During the summer we go for picnics whenever weather allows, keep an eye on our Facebook page every Monday. We're also inviting you to hang out in our <a href="https://discord.gg/4VwCann">Discord server</a> and sometimes we host a <a href="https://www.twitch.tv/mandagsklubben">Twitch stream</a>.
         </p>
         <p>
           Our events are self-organized and free to attend and takes place downstairs at Medeltidskrogen Sjätte Tunnan in Stockholm, Sweden, on <em>every</em> Monday evening.
