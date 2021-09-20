@@ -1,42 +1,43 @@
 <template>
-  <main class="m-5">
-
+  <main class="my-4 mx-auto flex flex-wrap max-width-1080 justify-center">
+    <EventSection
+      v-for="event in events"
+      v-bind:key="event.id"
+      :event="event"
+    />
     <AboutSection />
-    
-    <div class="flex flex-wrap">
-
-      <EventSection v-for="event in events" v-bind:key="event.id" :event="event" />
-
-    </div>
-
+    <BannerSection />
     <FooterSection />
-
   </main>
 </template>
 
 <script>
-import EventSection from './EventSection.vue'
-import AboutSection from './AboutSection.vue'
-import FooterSection from './FooterSection.vue'
+import EventSection from "./EventSection.vue";
+import AboutSection from "./AboutSection.vue";
+import BannerSection from "./BannerSection.vue";
+import FooterSection from "./FooterSection.vue";
 
 export default {
-  name: 'HomePage',
+  name: "HomePage",
   components: {
     EventSection,
     AboutSection,
-    FooterSection
+    BannerSection,
+    FooterSection,
   },
-  data () {
+  data() {
     return {
       events: [],
-    }
+    };
   },
-  mounted () {
+  mounted() {
     this.axios
-      .get('https://mandagsklubben.blob.core.windows.net/mandagsklubben-events/events.json')
-      .then(response => (this.events = response.data.events))
-  }
-}
+      .get(
+        "https://mandagsklubben.blob.core.windows.net/mandagsklubben-events/events.json"
+      )
+      .then((response) => (this.events = response.data.events));
+  },
+};
 </script>
 
 <style scoped>
