@@ -16,7 +16,7 @@
 
     <section class="flex-auto m-2">
       <a href="http://www.flowersfx.com" target="blank">
-        FlowersFX © 2011-2020 ★ info@flowersfx.com
+        FlowersFX © 2011-2022 ★ info@flowersfx.com
       </a>
     </section>
   </div>
