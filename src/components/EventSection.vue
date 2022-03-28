@@ -8,7 +8,7 @@
     </h2>
     <img :src="event.coverurl ? event.coverurl : '/images/cover.jpg'" />
     <h1>{{ event.name }}</h1>
-    <p class="text-lg">
+    <p class="text-lg whitespace-pre-line	">
       {{ event.description }}
     </p>
     <p class="text-sm p-0">
