@@ -1,7 +1,7 @@
 <template>
   <div class="m-2 mt-5 w-full text-center flex flex-col">
     <section class="flex-auto m-2">
-      <a href="https://www.facebook.com/pg/mandagsklubben.net" target="blank">
+      <a href="https://www.facebook.com/mandagsklubben.net" target="blank">
         Facebook
       </a>
     </section>
