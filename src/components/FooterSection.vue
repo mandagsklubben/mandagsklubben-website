@@ -15,6 +15,10 @@
     </section>
 
     <section class="flex-auto m-2">
+      <a href="https://mondagsklubben.myspreadshop.se/" target="blank"> Merch </a>
+    </section>
+
+    <section class="flex-auto m-2">
       <a href="http://www.flowersfx.com" target="blank">
         FlowersFX © 2011-2022 ★ info@flowersfx.com
       </a>
