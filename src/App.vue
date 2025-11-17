@@ -16,12 +16,12 @@ export default {
 <style>
 @font-face {
        font-family: "Snowstorm";
-       src: url("/fonts/Snowstorm.otf");
+       src: url("@/assets/fonts/Snowstorm.otf");
 }
 
 @font-face {
        font-family: "Snowstorm Light";
-       src: url("/fonts/Snowstorm Light.otf");
+       src: url("@/assets/fonts/Snowstorm Light.otf");
 }
 
 body {

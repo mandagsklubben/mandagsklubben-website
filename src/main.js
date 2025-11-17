@@ -1,13 +1,13 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import '@/assets/styles/tailwind.pcss'
 
-Vue.config.productionTip = false
-Vue.use(VueAxios, axios)
-Vue.use(require('vue-moment'));
+const app = createApp(App)
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+// Vue 3 compatible axios setup
+app.use(VueAxios, axios)
+app.provide('axios', app.config.globalProperties.axios)
+
+app.mount('#app')

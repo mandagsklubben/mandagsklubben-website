@@ -12,9 +12,9 @@
       {{ event.description }}
     </p>
     <p class="text-sm p-0">
-      {{ event.starttime | moment("dddd Do MMMM YYYY") }},
-      {{ event.starttime | moment("HH:mm") }}-{{
-        event.endtime | moment("HH:mm")
+      {{ formatDate(event.starttime) }},
+      {{ formatTime(event.starttime) }}-{{
+        formatTime(event.endtime)
       }}
     </p>
     <p class="text-sm p-0">{{ event.placename }}, {{ event.placestreet }}</p>
@@ -36,6 +36,12 @@ export default {
       } else {
         return moment(this.event.starttime).fromNow();
       }
+    },
+    formatDate: function (date) {
+      return moment(date).format("dddd Do MMMM YYYY");
+    },
+    formatTime: function (date) {
+      return moment(date).format("HH:mm");
     },
   },
 };

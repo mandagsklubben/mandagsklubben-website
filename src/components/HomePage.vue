@@ -4,6 +4,7 @@
       v-for="event in events"
       v-bind:key="event.id"
       :event="event"
+      :now="now"
     />
     <AboutSection />
     <BannerSection />
@@ -28,6 +29,7 @@ export default {
   data() {
     return {
       events: [],
+      now: new Date(),
     };
   },
   mounted() {
