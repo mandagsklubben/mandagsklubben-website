@@ -1,15 +1,28 @@
 <template>
-  <main class="my-4 mx-auto flex flex-wrap max-width-1080 justify-center">
-    <EventSection
-      v-for="event in events"
-      v-bind:key="event.id"
-      :event="event"
-      :now="now"
-    />
-    <AboutSection />
+  <div class="min-h-screen flex flex-col">
+    <!-- Hero: full-width cover image with overlay -->
     <BannerSection />
+
+    <!-- About content -->
+    <AboutSection />
+
+    <!-- Events (only if any exist) -->
+    <section v-if="events.length" class="w-full max-w-2xl mx-auto px-4 py-8">
+      <h2 class="text-2xl mb-6 text-center">Upcoming Events</h2>
+      <EventSection
+        v-for="event in events"
+        v-bind:key="event.id"
+        :event="event"
+        :now="now"
+      />
+    </section>
+
+    <!-- Spacer to push footer down -->
+    <div class="flex-grow"></div>
+
+    <!-- Footer links -->
     <FooterSection />
-  </main>
+  </div>
 </template>
 
 <script>
@@ -37,16 +50,8 @@ export default {
       .get(
         "https://mandagsklubben.blob.core.windows.net/mandagsklubben-events/events.json"
       )
-      .then((response) => (this.events = response.data.events));
+      .then((response) => (this.events = response.data.events))
+      .catch(() => {});
   },
 };
 </script>
-
-<style scoped>
-.min-width-320 {
-  min-width: 320px;
-}
-.max-width-720 {
-  max-width: 720px;
-}
-</style>

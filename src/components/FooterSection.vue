@@ -1,29 +1,25 @@
 <template>
-  <div class="m-2 mt-5 w-full text-center flex flex-col">
-    <section class="flex-auto m-2">
-      <a href="https://www.facebook.com/mandagsklubben.net" target="blank">
+  <footer class="w-full border-t border-foreground/20 mt-8">
+    <nav class="flex flex-wrap items-center justify-center gap-4 sm:gap-8 px-4 py-6">
+      <a href="https://www.facebook.com/mandagsklubbenafterwork" target="_blank" rel="noopener">
         Facebook
       </a>
-    </section>
-
-    <section class="flex-auto m-2">
-      <a href="https://discord.gg/4VwCann" target="blank"> Discord </a>
-    </section>
-
-    <section class="flex-auto m-2">
-      <a href="https://www.twitch.tv/mandagsklubben" target="blank"> Twitch </a>
-    </section>
-
-    <section class="flex-auto m-2">
-      <a href="https://mondagsklubben.myspreadshop.se/" target="blank"> Merch </a>
-    </section>
-
-    <section class="flex-auto m-2">
-      <a href="http://www.flowersfx.com" target="blank">
-        FlowersFX © 2011-2022 ★ info@flowersfx.com
+      <a href="https://discord.gg/4VwCann" target="_blank" rel="noopener">
+        Discord
       </a>
-    </section>
-  </div>
+      <a href="https://www.twitch.tv/mandagsklubben" target="_blank" rel="noopener">
+        Twitch
+      </a>
+      <a href="https://mondagsklubben.myspreadshop.se/" target="_blank" rel="noopener">
+        Merch
+      </a>
+    </nav>
+    <p class="text-center text-xs opacity-50 pb-4">
+      <a href="http://www.flowersfx.com" target="_blank" rel="noopener">
+        FlowersFX
+      </a>
+    </p>
+  </footer>
 </template>
 
 <script>
@@ -33,13 +29,11 @@ export default {
 </script>
 
 <style scoped>
-.min-width-320 {
-  min-width: 320px;
-}
-.max-width-720 {
-  max-width: 720px;
-}
 a {
   color: #fffc00;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 </style>

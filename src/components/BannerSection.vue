@@ -1,23 +1,18 @@
 <template>
-  <section class="m-5 flex-1 max-width-720 min-width-320">
-    <img src="/images/nuts.jpg" />
+  <section class="w-full">
+    <!-- Hero image -->
+    <div class="w-full h-[60vh] sm:h-[70vh] overflow-hidden">
+      <img
+        src="/images/cover.jpg"
+        alt="Måndagsklubben"
+        class="w-full h-full object-cover"
+      />
+    </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: "AboutSection",
+  name: "BannerSection",
 };
 </script>
-
-<style scoped>
-.min-width-320 {
-  min-width: 320px;
-}
-.max-width-720 {
-  max-width: 720px;
-}
-a {
-  color: #fffc00;
-}
-</style>
